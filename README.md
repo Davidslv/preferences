@@ -1,5 +1,7 @@
 # Preferences
 
+[![Build Status](https://travis-ci.org/Davidslv/preferences.svg?branch=master)](https://travis-ci.org/davidslv/preferences)
+
 This gem is an extraction of the [Spree Ecommerce](https://github.com/spree/spree) Open Source Software.
 
 I couldn't find anything as robust as their solution so I decided to extract it into a gem.
@@ -38,7 +40,7 @@ end
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/preferences/fork )
+1. Fork it ( https://github.com/davidslv/preferences/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
