@@ -18,6 +18,11 @@ Or install it yourself as:
 
     $ gem install preferences
 
+Run migrations
+
+    $ rails generate preferences:migration
+    $ bundle exec rake db:migrate db:test:prepare
+
 ## Usage
 
 ```ruby
@@ -26,8 +31,9 @@ class YourModel < ActiveRecord::Base
   preference :number_of_pokemons, :integer, default: 151
 end
 
-YourModel.preferred_color # => red
-YourModel.preferred_number_of_pokemons # => 151
+@model = YourModel.create(preferences: {number_of_pokemons: 649})
+@model.preferred_number_of_pokemons # => 649
+@model.preferred_color # => "red"
 ```
 
 ## Contributing
