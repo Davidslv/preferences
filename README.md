@@ -1,6 +1,7 @@
 # Preferências
 
 [![Build Status](https://travis-ci.org/Davidslv/preferences.svg?branch=master)](https://travis-ci.org/davidslv/preferences)
+[![Gem Version](https://badge.fury.io/rb/preferencias@2x.png)](http://badge.fury.io/rb/preferencias)
 
 This gem is an extraction of the [Spree Ecommerce](https://github.com/spree/spree) Open Source Software.
 
