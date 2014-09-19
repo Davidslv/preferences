@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe Preferences::Configuration do
+describe Preferencias::Configuration do
 
   before :all do
-    class AppConfig < Preferences::Configuration
+    class AppConfig < Preferencias::Configuration
       preference :color, :string, :default => :blue
     end
     @config = AppConfig.new

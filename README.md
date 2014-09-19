@@ -1,4 +1,4 @@
-# Preferences
+# Preferências
 
 [![Build Status](https://travis-ci.org/Davidslv/preferences.svg?branch=master)](https://travis-ci.org/davidslv/preferences)
 
@@ -10,7 +10,7 @@ I couldn't find anything as robust as their solution so I decided to extract it 
 
 Add this line to your application's Gemfile:
 
-    gem 'preferences'
+    gem 'preferencias'
 
 And then execute:
 
@@ -18,11 +18,11 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install preferences
+    $ gem install preferencias
 
 Run migrations
 
-    $ rails generate preferences:migration
+    $ rails generate preferencias:migration
     $ bundle exec rake db:migrate db:test:prepare
 
 ## Usage

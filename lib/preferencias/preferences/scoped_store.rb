@@ -1,4 +1,4 @@
-module Preferences
+module Preferencias
   class ScopedStore
     def initialize(prefix, suffix = nil)
       @prefix = prefix
@@ -6,7 +6,7 @@ module Preferences
     end
 
     def store
-      Preferences::Store.instance
+      Preferencias::Store.instance
     end
 
     def fetch(key, &block)

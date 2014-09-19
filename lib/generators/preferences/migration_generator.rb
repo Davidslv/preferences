@@ -1,7 +1,7 @@
 require 'rails/generators'
 require 'rails/generators/migration'
 
-module Preferences
+module Preferencias
   class MigrationGenerator < ::Rails::Generators::Base
     include ::Rails::Generators::Migration
     source_root File.expand_path('../templates', __FILE__)

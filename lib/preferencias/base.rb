@@ -1,8 +1,8 @@
 require 'active_record'
 
-module Preferences
+module Preferencias
   class Base < ActiveRecord::Base
-    include Preferences::Preferable
+    include Preferencias::Preferable
 
     serialize :preferences, Hash
     after_initialize do

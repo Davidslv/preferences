@@ -1,10 +1,10 @@
 require 'spec_helper'
 
-describe Preferences::Preferable do
+describe Preferencias::Preferable do
 
   before :all do
     class A
-      include Preferences::Preferable
+      include Preferencias::Preferable
       attr_reader :id
 
       def initialize
@@ -31,7 +31,7 @@ describe Preferences::Preferable do
 
     # ensure we're persisting as that is the default
     #
-    store = Preferences::Store.instance
+    store = Preferencias::Store.instance
     store.persistence = true
   end
 
@@ -220,7 +220,7 @@ describe Preferences::Preferable do
       ActiveRecord::Migration.verbose = false
       CreatePrefTest.migrate(:up)
 
-      class PrefTest < Preferences::Base
+      class PrefTest < Preferencias::Base
         preference :pref_test_pref, :string, :default => 'abc'
         preference :pref_test_any, :any, :default => []
       end

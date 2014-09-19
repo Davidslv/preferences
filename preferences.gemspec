@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'preferences/version'
+require 'preferencias/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "preferences"
-  spec.version       = Preferences::VERSION
+  spec.name          = "preferencias"
+  spec.version       = Preferencias::VERSION
   spec.authors       = ["David Silva"]
   spec.email         = ["davidslv@gmail.com"]
   spec.summary       = %q{Extracted Preferences Model from Spree Ecommerce.}
@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "activerecord", [">= 3.2", "< 4.2"]
 
   spec.add_development_dependency "bundler", "~> 1.6"
-  spec.add_development_dependency "rake"
-  spec.add_development_dependency "rspec"
-  spec.add_development_dependency "sqlite3"
+  spec.add_development_dependency "rake", "~> 0"
+  spec.add_development_dependency "rspec", "3.1.3"
+  spec.add_development_dependency "sqlite3", "~> 0"
 end

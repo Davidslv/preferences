@@ -1,4 +1,4 @@
-# Use singleton class Preferences::Store.instance to access
+# Use singleton class Preferencias::Store.instance to access
 #
 # StoreInstance has a persistence flag that is on by default,
 # but we disable database persistence in testing to speed up tests
@@ -6,7 +6,7 @@
 
 require 'singleton'
 
-module Preferences
+module Preferencias
 
   class StoreInstance
     attr_accessor :persistence

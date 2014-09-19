@@ -20,9 +20,9 @@
 # a.preferred_color
 #
 #
-module Preferences
+module Preferencias
   class Configuration
-    include Preferences::Preferable
+    include Preferencias::Preferable
 
     def configure
       yield(self) if block_given?

@@ -34,11 +34,11 @@
 
 require 'active_support'
 
-module Preferences::Preferable
+module Preferencias::Preferable
   extend ActiveSupport::Concern
 
   included do
-    extend Preferences::PreferableClassMethods
+    extend Preferencias::PreferableClassMethods
   end
 
   def get_preference(name)

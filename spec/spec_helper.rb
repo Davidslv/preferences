@@ -1,12 +1,12 @@
 require 'rspec'
-require 'preferences'
+require 'preferencias'
 require 'rails/test_unit/railtie'
 require 'pry'
 
 RSpec.configure do |config|
   config.color = true
   config.formatter = 'documentation'
-  config.before(:each) { Preferences::Preference.delete_all }
+  config.before(:each) { Preferencias::Preference.delete_all }
 end
 
 module Config

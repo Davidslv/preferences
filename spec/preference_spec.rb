@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe Preferences::Preference do
+describe Preferencias::Preference do
 
   it "should require a key" do
-    preference = Preferences::Preference.new
+    preference = Preferencias::Preference.new
     preference.key = :test
     preference.value = true
     expect(preference).to be_valid
@@ -12,12 +12,12 @@ describe Preferences::Preference do
   describe "type coversion for values" do
 
     def round_trip_preference(key, value = false)
-      p = Preferences::Preference.new
+      p = Preferencias::Preference.new
       p.value = value
       p.key = key
       p.save
 
-      Preferences::Preference.find_by_key(key)
+      Preferencias::Preference.find_by_key(key)
     end
 
     it ":boolean" do

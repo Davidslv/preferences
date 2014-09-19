@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Preferences::ScopedStore do
+describe Preferencias::ScopedStore do
   let(:scoped_store){ described_class.new(prefix, suffix) }
   subject{ scoped_store }
   let(:prefix){ nil }
@@ -8,7 +8,7 @@ describe Preferences::ScopedStore do
 
   describe '#store' do
     subject{ scoped_store.store }
-    it{ should be Preferences::Store.instance }
+    it{ should be Preferencias::Store.instance }
   end
 
   context 'stubbed store' do

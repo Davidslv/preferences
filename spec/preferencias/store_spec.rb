@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe Preferences::Store do
+describe Preferencias::Store do
   before :each do
-    @store = Preferences::StoreInstance.new
+    @store = Preferencias::StoreInstance.new
   end
 
   it "sets and gets a key" do
@@ -17,7 +17,7 @@ describe Preferences::Store do
   end
 
   it "will return db value when cache is emtpy and cache the db value" do
-    preference = Preferences::Preference.where(:key => 'test').first_or_initialize
+    preference = Preferencias::Preference.where(:key => 'test').first_or_initialize
     preference.value = '123'
     preference.save
 
