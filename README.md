@@ -32,6 +32,8 @@ Run migrations
 
 ```ruby
 class YourModel < ActiveRecord::Base
+  serialize  :preferences # create a column as text in your database
+
   preference :color, :string, default: 'red'
   preference :number_of_pokemons, :integer, default: 151
 end
