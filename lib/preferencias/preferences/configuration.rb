@@ -33,7 +33,7 @@ module Preferencias
     end
 
     def reset
-      preferences.each do |name, value|
+      preferences.each do |name, _value|
         set_preference name, preference_default(name)
       end
     end

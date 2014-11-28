@@ -40,7 +40,7 @@ module Preferencias
         # has been cleared from the cache
 
         # does it exist in the database?
-        if preference = Preference.find_by_key(key)
+        if preference == Preference.find_by_key(key)
           # it does exist
           val = preference.value
         else
